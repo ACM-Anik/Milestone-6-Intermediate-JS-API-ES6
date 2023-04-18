@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data-Users</title>
+</head>
+
+<body>
+    <header>
+        <h1>Display Data & Users</h1>
+    </header>
+    <main>
+        <button onclick="loadData()">Load Data</button>
+        <button onclick="loadData2()">Load Data 2</button>
+        <button onclick="loadUsers()">Load Users</button>
+        <button onclick="loadUsers2()">Load Users 2</button>
+        <button onclick="createAPost()">create A Post</button>
+        <button onclick="deleteAPost()">Delete A Post</button>
+        <button onclick="patchAPost()">Patch A Post</button>
+
+        <div class="users-container">
+            <ul id="users-list">
+
+            </ul>
+        </div>
+
+    </main>
+
+    <!-- script  -->
+    <script src="JS/fetch.js"></script>
+    <script src="JS/app.js"></script>
+    <script src="JS/index.js"></script>
+</body>
+
+</html>

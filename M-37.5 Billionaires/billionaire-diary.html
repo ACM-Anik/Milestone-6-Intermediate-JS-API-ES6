@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaire Diary</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="container mx-auto">
+    <header></header>
+    <main class="grid grid-cols-5 gap-10">
+        <section class="bg-[#0E1B34] h-auto w-64 col-span-1">
+            <div class="text-center p-6">
+                <h1 class="text-white font-bold text-4xl">Billionaire </h1>
+                <h3 class="text-white font-bold">Diary</h3>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class=" text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] px-16"><span class="text-base font-bold">Add a user</span> <br>(Randomly)</button>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class="text-base font-bold text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] px-12 py-3">Double Money</button>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class="text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] px-14"><span class="text-base font-bold">Sort By Rank </span> <br>(Decending)</button>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class="text-base font-bold text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] py-4 px-4">Calculate Entire Wealth</button>
+            </div>
+            <div class="my-8 mx-6">
+                <img class="" src="images/icons/divider.png" alt="">
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class="text-base font-bold text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] py-4 px-7">Show All Billionaires</button>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button id="industrial-page" class="text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] px-8"><span class="text-base font-bold">Richest by industry</span><br>(Technology)</button>
+            </div>
+            <div class="bg-white mx-5 text-center my-4">
+                <button class="text-[#0E1B34] bg-white hover:text-[white] hover:bg-[#0E1B34] px-10"><span class="text-base font-bold">Richest by states</span><br>(Texas)</button>
+            </div>
+            
+        </section>
+        <section class="col-span-4 ml-6">
+            <div class="flex justify-between gap-6 my-5">
+                <input class="border-0 border-b-2 border-[#0E1B34] bg-gray-100 px-5 py-3 " type="search" name="" id="search-field" placeholder="Search">
+                <img src="images/logo/logo1.svg" alt="">
+            </div>
+            <div class="bg-gray-100 container mx-auto my-8">
+                <h1 class="text-2xl font-bold text-[#0E1B34] m-6 pt-6">Hello User!</h1>
+                <div class="my-6 ">
+                    <div class="overflow-x-auto">
+                        <table class="table table-zebra w-full">
+                          <!-- head -->
+                          <thead class="border-b-2 border-[#0E1B34]">
+                            <tr>
+                              <th>Person</th>
+                              <th>Citizenship</th>
+                              <th>Industry</th>
+                              <th>Rank</th>
+                              <th>Wealth</th>
+                            </tr>
+                          </thead>
+                          <tbody id="data-container" class="bg-gray-100">
+                            <!-- row 1 -->
+                            <!-- <tr>
+                                <td>Cy Ganderton</td>
+                                <td>Quality Control Specialist</td>
+                                <td>Blue</td>
+                                <td>Blue</td>
+                            </tr> -->
+                            <!-- row 2 -->
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/billi-diary.js"></script>
+</body>
+</html>

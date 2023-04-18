@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Billionaires List</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script
+      src="https://kit.fontawesome.com/ce32527ea4.js"
+      crossorigin="anonymous"
+    ></script>
+</head>
+
+<body class="container mx-auto" onload="fetchBillionaires('/technology?limit=10')">
+    <header>
+        <div class="my-6">
+            <h1 class="text-center text-4xl font-bold">Richest By Industry</h1>
+            <p class="text-center font-semibold text-xl">(<span id="sector">Technology</span>)</p>
+        </div>
+        <div class="flex justify-between items-center lg:mx-6">
+            <button id="back-to-main" class="p-2"><i class="fas fa-arrow-left"></i></button>
+            <img src="images/logo/logo1.svg" alt="">
+        </div>
+    </header>
+    <main>
+        <section id="cards-container" class="md:grid grid-cols-3 gap-6 my-6 justify-center items-center">
+        <!-- Dynamic cards -->
+        </section>
+        <section id="show-all" class=" text-center hidden my-5">
+            <button id="btn-show-all" class="btn btn-wide bg-[#0E1B34] hover:bg-[#0E1B28] ">Show ALL</button>
+        </section>
+
+    </main>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JS/industrial.js"></script>
+</body>
+
+</html>
